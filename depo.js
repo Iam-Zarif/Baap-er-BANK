@@ -44,4 +44,8 @@ document.getElementById('btn-2').addEventListener('click',function(){
     let balanceAmount = Number(balance.innerText);
     balance.innerText = balanceAmount - Number(inputValue);
 
+    // 
+
+    input.value= '';
+
 })

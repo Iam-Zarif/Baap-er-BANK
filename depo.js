@@ -29,20 +29,37 @@ balance.innerText = Number(previousBalance)+ Number(newInputValue);
 });
 
 document.getElementById('btn-2').addEventListener('click',function(){
+
+
+
     let input = document.getElementById("with");
     let inputValue = input.value;
     // console.log(inputValue);
+    
     // 
 
     let withdraw = document.getElementById("withdraw");
     let withdrawAmount = Number(withdraw.innerText);
-    withdraw.innerText = withdrawAmount + Number(inputValue);
+    // withdraw.innerText = withdrawAmount + Number(inputValue);
 
     // 
+    
+  //  
 
     let balance = document.getElementById("balance");
     let balanceAmount = Number(balance.innerText);
-    balance.innerText = balanceAmount - Number(inputValue);
+
+    if(inputValue > balanceAmount){
+      alert("Tor Baap er Bank e eto TAKA nai");
+      return ;
+    }
+
+    else{
+      balance.innerText = balanceAmount - Number(inputValue);
+      withdraw.innerText = withdrawAmount + Number(inputValue);
+    }
+
+// 
 
     // 
 

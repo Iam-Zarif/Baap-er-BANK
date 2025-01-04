@@ -1,0 +1,15 @@
+.ripa{
+    padding-top: 100px;
+    text-align: center;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 800;
+}
+footer{
+margin-top: 50px;
+margin-left: 300px;
+    background-color: beige;
+    width: 50%;
+    height: 200px;
+}
